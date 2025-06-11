@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #6a4b8e;
+    --black-color:rgb(29, 1, 29);
+    --tan-color: #6a4b8e;
+
+    }
+
+    main {
+        font-family: "Montserrat condensed", sans-serif;
+        overflow: hidden;
+    }
+
+.text-serif {
+    font-family: "Montserrat condensed", sans-serif;
+
+
+}

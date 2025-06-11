@@ -1,0 +1,720 @@
+ <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>BLÖMS</title>
+    
+      <!-- Meta para redes sociales -->
+      <meta property="og:title" content="BLÖMS" />
+      <meta property="og:description" content="Consultora especializada en Diseño, Diagnóstico e Incubación de Proyectos y Emprendimientos." />
+      <meta property="og:image" content="https://blomstfrisk.github.io/WEB-BLOMS-2025/images/logo-bloms.png" />
+      <meta property="og:url" content="https://blomstfrisk.github.io/WEB-BLOMS-2025/" />
+      <meta name="twitter:card" content="summary_large_image" />
+    
+      <!-- Estilos -->
+      <link rel="stylesheet" href="style.css" />
+
+       <!-- Icono -->
+      <link rel="icon" href="favicon_hub_only_rounded.ico" type="image/x-icon" />
+      <link rel="icon" href="images/favicom.png" type="image/x-icon" />
+    </head>
+        
+      <!-- Fuente Outfit -->
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+     <!-- Tailwind CSS CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          violeta: '#9676d8',
+                morado: '#6A1B9A',
+                fondo: '#FAF5FF',
+                bordo: '#a2263f',
+                celeste: '#0c6d99',
+                azul: '#1D3B6D',
+                berenjena: '#5c4554',
+                bordooscuro: '#552c5b',
+                violaceo: '#6a4b8e',
+                celestonoscuro: '#1394ad',
+                vino: '#80142f',
+                violetagrafito: '#3e2d4f',
+                lila: '#C587C5',
+                violaceoclaro: '#e0d1fa',
+
+                azulado: '#8EA4D2',
+                azulino: '#6279B8',
+                azulgris: '#49516F',
+                azulmarino: '#184E77', 
+                azulbase: '#1E6091',
+                azulinado: '#1A759F',
+                azulpetrol: '#168AAD',
+                azulverdoso: '#34A0A4',
+                verdepalta: '#6BAB6F',
+                verdepetroloscuro: '#036666',
+                verdepetroleo: '#14746F',
+                verdepetro: '#248277',
+                verdepetroclaro: '#469d89', 
+                verdeinglesclaro: '#3AB795',
+                verdementa: '#A0E8AF',
+                verdeingles: '#477E62',
+                verdepetroseco: '#86BAA1',
+                amarillooro: '#D7B04B',
+                amarillolimon: '#D9ED92',
+                amarillo: '#FFCF56',
+                fondocalido: '#FDFCFB',
+                cyanoscuroelegante: '#006D77',
+                turquesaprofundo: '#007C91',
+
+          celeste: '#0c6d99',
+          celestonoscuro: '#1394ad',
+          azulpetrol: '#168AAD',
+          azulverdoso: '#34A0A4',
+          verdepetroloscuro: '#036666',
+          verdepetroleo: '#14746F',
+          verdepetro: '#248277',
+          amarillooro: '#D7B04B',
+          amarillo: '#FFCF56',
+          fondocalido: '#FDFCFB',
+          black: '#000000',
+          Gris: '#4d4d4d',
+          Amarillo: '#f3be13',
+          Turquesa: '#26a7a6',
+          cyanoscuroelegante: '#006D77',
+          turquesaprofundo: '#007C91',
+        },
+        fontSize: {
+          '2xl': '1.5rem',
+          '3xl': '1.875rem',
+          '4xl': '2.25rem',
+          '5xl': '3rem',
+          '6xl': '3.75rem',
+        },
+        fontWeight: {
+          normal: 400,
+          medium: 500,
+          bold: 700,
+        },
+        fontFamily: {
+          sans: ['"FF Good Pro Wide Light"', 'sans-serif'],
+          condblack: ['"FF Good Pro Cond Black"', 'sans-serif'],
+          'barlow-condensed': ['"Barlow Condensed"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1.2s ease-out forwards;
+  }
+
+  .animate-fade-in-delay {
+    animation: fadeIn 1.2s ease-out 0.3s forwards;
+  }
+
+  @keyframes logoEntry {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-logo-entry {
+    animation: logoEntry 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-white text-[#222] font-sans"> <!-- Compensa altura del menú fijo -->
+
+<!-- NAV RESPONSIVE -->
+
+<nav class="fixed top-0 left-0 right-0 bg-white text-black shadow-md z-50 px-6 py-3 flex items-center justify-between">
+  <div class="flex items-center gap-2 text-lg sm:text-xl font text-Turquesa">
+
+     <li class="flex flex-col gap-2 mt-2 lg:mt-0">
+        <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+          <img src="./images/ar.png" alt="Español" class="w-6 h-4 rounded-sm" />
+        </a>
+        <a href="indexen.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
+          <img src="./images/us.png" alt="English" class="w-6 h-4 rounded-sm" />
+        </a>
+      </li>
+    
+    <!-- Logo -->
+    <a href="https://www.instagram.com/bloms.consultora/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+      <img src="./images/logotipo cian.png" alt="Blöms Logo" class="h-10 sm:h-12 md:h-14 w-auto object-contain" />
+    </a>
+
+       
+  </div>
+
+ 
+    <!-- Botón hamburguesa visible solo en sm y md -->
+    <div class="lg:hidden">
+      <button id="menu-toggle" class="text-white text-3xl focus:outline-none">
+        <span id="menu-icon">&#9776;</span>
+      </button>
+    </div>
+  
+    <!-- Menú visible en LG y desplegable en SM/MD -->
+    <ul id="menu" class="hidden lg:flex lg:flex-row items-start lg:items-end gap-4 text-base font-bold text-black">
+    
+      <li><a href="#sobre" class="block w-full py-1 hover:text-Turquesa">BLÖMS CONSULTORA</a></li>
+      <li><a href="#estudios" class="block w-full py-1 hover:text-Turquesa">Asesorias</a></li>
+      <li><a href="logincursos.html" target="_blank" rel="noopener noreferrer" class="block w-full py-1 hover:text-Turquesa">BLÖMS Web</a></li>
+      
+      <li>
+  <a id="contactoMail" href="#" 
+     class="block w-full py-1 text-black hover:text-Turquesa flex items-center space-x-2">
+    <i class="fas fa-envelope"></i>
+    <span>Contacto</span>
+  </a>
+</li>
+     
+    </ul>
+  </nav>
+
+
+
+
+<!-- Script para el toggle -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      menu.classList.toggle('flex-col');
+      menu.classList.toggle('absolute');
+      menu.classList.toggle('top-full');
+      menu.classList.toggle('left-0');
+      menu.classList.toggle('bg-white');
+      menu.classList.toggle('w-full');
+      menu.classList.toggle('p-4');
+      menu.classList.toggle('shadow-md');
+    });
+  });
+</script>
+
+<!-- HERO con logo -->
+<section
+  id="inicio"
+  class="relative h-[calc(120vh-100px)] flex items-center justify-center text-white py-6 text-center font-bold overflow-hidden"
+  style="background-color: black;">
+
+  <!-- Fondo floral -->
+  <div class="absolute inset-0 bg-center bg-cover opacity-20" style="background-image: url('./images/fondodepantallanegro.png'); z-index: 0;"></div>
+
+  <div class="relative z-10 text-center animate-fade-in">
+    <!-- Overlay para mejor contraste -->
+    <div class="absolute inset-0 bg-black/0.2"></div>
+    <div class="relative z-10 text-white text-center animate-fade-in">
+      <!-- Logo animado sin borde crema -->
+      <img
+        src="images/logotipo negro.png"
+        alt="BLÖMS logo"
+        class="w-64 sm:w-80 mx-auto rounded-xl animate-logo-entry"
+      />
+    </div>
+  </div>
+</section>
+
+    
+      <!-- Hero principal con texto -->
+      <section class="text-center py-20 px-4">
+        <h1 class="text-5xl font-bold mb-4">BLÖMS CONSULTORA</h1>
+        <p class="text-xl max-w-xl mx-auto mb-8">
+          Diagnostico de Diseño de productos y servicios, estrategias y propósito para que tus ideas se conviertan en un emprendimiento prospero.
+        </p>
+        <p class="text-xl max-w-xl mx-auto mb-8">
+            Te invitamos a que conozcas nuestras servicios.
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-4">
+
+            <a href="#profesionales" class="bg-[#1e2425] text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-[#008b94] transition">
+              PROFESIONALES
+            </a>
+            <a href="#capacitaciones" class="bg-[#1e2425] text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-[#87447c] transition">
+              CAPACITACIONES
+            </a>
+            <a href="#asesoramiento" class="bg-[#1e2425] text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-[#a94464] transition">
+              ASESORIAS PERSONALIZADAS
+            </a>
+            <a href="#recursos" class="bg-[#1e2425] text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-[#2d6458] transition">
+              RECURSOS
+            </a>
+          </div>
+          
+      </section>
+  
+  <!-- Animaciones personalizadas -->
+  <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .animate-fade-in {
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+  
+    .animate-fade-in-delay {
+      animation: fadeIn 1.2s ease-out 0.3s forwards;
+    }
+  </style>
+
+   <!-- Sección de profesionales -->
+<section id="profesionales" class="py-16 px-6 bg-[#1e2425]">
+
+  <!-- Encabezado alineado al ancho de los bloques -->
+  <div class="max-w-6xl mx-auto">
+    <div class="rounded-xl bg-[#015c63] py-6 px-4 mb-12">
+      <h2 class="text-white font-bold text-center text-3xl m-0">
+        PROFESIONALES
+      </h2>
+    </div>
+  </div>
+
+  <!-- Tarjetas con colores coordinados -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+    <!-- DIAGNÓSTICO -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#015c63] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-briefcase-medical text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">DIAGNÓSTICO DE PRODUCTOS Y SERVICIOS</h3>
+      <p class="text-sm text-white/80 mb-4">Primer escala: Diagnóstico de Diseño.</p>
+      <a href="index1diagnostico.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#015c63] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- BRANDING -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#007e8a] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-palette text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">BRANDING Y MARKETING</h3>
+      <p class="text-sm text-white/80 mb-4">Diseño de marca, estrategias digitales de venta.</p>
+      <a href="branding.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#007e8a] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- DISEÑO DE PRODUCTO -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#0098a0] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-tools text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">DISEÑO DE PRODUCTO</h3>
+      <p class="text-sm text-white/80 mb-4">Escalera de productos y servicios.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#0098a0] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- GESTIÓN INTEGRAL -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#00b6c0] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-briefcase text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">GESTIÓN INTEGRAL DE EMPRENDIMIENTOS</h3>
+      <p class="text-sm text-white/80 mb-4">Consultoría para emprendedores y empresas.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#00b6c0] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- Sección de capacitaciones -->
+<section id="capacitaciones" class="py-16 px-6 bg-[#1e2425]">
+
+  <!-- Título de sección -->
+  <div class="max-w-6xl mx-auto">
+    <div class="rounded-xl bg-[#87447c] py-6 px-4 mb-12">
+      <h2 class="text-white font-bold text-center text-3xl m-0">
+        CAPACITACIONES
+      </h2>
+    </div>
+  </div>
+
+  <!-- Grid de bloques en degradé -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+    <!-- GESTIÓN -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#87447c] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-puzzle-piece text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">GESTIÓN DE RECURSOS</h3>
+      <p class="text-sm text-white/80 mb-4">Primer escala: Profundiza conocimientos en Diseño de productos.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#87447c] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- E COMMERCE -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#9c4e8f] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-shopping-cart text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">E COMMERCE</h3>
+      <p class="text-sm text-white/80 mb-4">Modelos de incubación según necesidad y potencialidad.</p>
+      <a href="index1incubadora.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#9c4e8f] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+<!-- DESARROLLO DE PRODUCTO -->
+<div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#b15296] hover:scale-105 transition">
+  <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+    <div class="w-16 h-16 flex items-center justify-center">
+      <i class="fas fa-flask text-white text-[3.6rem]"></i>
+    </div>
+  </div>
+  <h3 class="text-xl font-semibold mb-1">DESARROLLO DE PRODUCTO</h3>
+  <p class="text-sm text-white/80 mb-4">Diseñados, personalizados y ejecutables para quien lo solicite.</p>
+  <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#b15296] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+    Ir al sitio
+  </a>
+</div>
+
+    <!-- MARCA -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#a864b0] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-tag text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">MARCA Y PACKAGING</h3>
+      <p class="text-sm text-white/80 mb-4">Consultoría para cooperativas y empresas recuperadas.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#a864b0] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+<!-- Sección de asesoramiento -->
+<section id="asesoramiento" class="py-16 px-6 bg-[#1e2425]">
+
+  <!-- Título en escala y ancho igual a los bloques -->
+  <div class="max-w-6xl mx-auto">
+    <div class="rounded-xl bg-[#a94464] py-6 px-4 mb-12">
+      <h2 class="text-white font-bold text-center text-3xl m-0">
+        ASESORÍAS PERSONALIZADAS
+      </h2>
+    </div>
+  </div>
+
+  <!-- Grid de bloques -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+    <!-- ASISTENCIA A EMPRENDIMIENTOS -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#a94464] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-rocket text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">ASISTENCIA TECNICA A EMPRENDIMIENTOS</h3>
+      <p class="text-sm text-white/80 mb-4">Primer escala: Profundiza conocimientos en Diseño de productos.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#a94464] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- INCUBADORA -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#b85168] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="relative w-20 h-20 flex items-center justify-center">
+          <i class="fas fa-bowl-rice text-white text-[3rem] absolute bottom-0"></i>
+          <i class="fas fa-seedling text-white text-[2.5rem] absolute top-0"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">INCUBADORA DE IDEAS Y PROYECTOS</h3>
+      <p class="text-sm text-white/80 mb-4">Modelos de incubación según necesidad y potencialidad.</p>
+      <a href="index1incubadora.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#b85168] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- LLAVE EN MANO -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#c9565d] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-key text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">PROYECTO LLAVE EN MANO</h3>
+      <p class="text-sm text-white/80 mb-4">Diseñados, personalizados y ejecutables para quien lo solicite.</p>
+      <a href="branding.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#c9565d] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- ASISTENCIA A EMPRESAS -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#db5d66] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-industry text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">ASISTENCIA TECNICA DE EMPRESAS RECUPERADAS</h3>
+      <p class="text-sm text-white/80 mb-4">Consultoría para cooperativas y empresas recuperadas.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#db5d66] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección de recursos -->
+<section id="recursos" class="py-16 px-6 bg-[#1e2425]">
+
+  <!-- Título ajustado en escala y ancho -->
+  <div class="max-w-6xl mx-auto">
+    <div class="rounded-xl bg-[#2d6458] py-6 px-4 mb-12">
+      <h2 class="text-white font-bold text-center text-3xl m-0">
+        RECURSOS
+      </h2>
+    </div>
+  </div>
+
+  <!-- Grid de tarjetas -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+    <!-- RECURSOS PARA REDES SOCIALES -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#2d6458] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-mobile-alt text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">RECURSOS PARA REDES SOCIALES</h3>
+      <p class="text-sm text-white/80 mb-4">Diseñados, personalizados y ejecutables para quien lo solicite.</p>
+      <a href="branding.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#2d6458] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- RECURSOS POR CONVENIO -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#3f7e6b] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-handshake text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">RECURSOS POR CONVENIO</h3>
+      <p class="text-sm text-white/80 mb-4">Primer escala: Profundiza conocimientos en Diseño de productos.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#3f7e6b] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- RECURSOS PAGOS -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#4c9a80] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-credit-card text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">RECURSOS PAGOS</h3>
+      <p class="text-sm text-white/80 mb-4">Consultoría para cooperativas y empresas recuperadas.</p>
+      <a href="index.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#4c9a80] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+    <!-- RECURSOS GRATUITOS -->
+    <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-[#60b494] hover:scale-105 transition">
+      <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <i class="fas fa-gift text-white text-[3.6rem]"></i>
+        </div>
+      </div>
+      <h3 class="text-xl font-semibold mb-1">RECURSOS GRATUITOS</h3>
+      <p class="text-sm text-white/80 mb-4">Modelos de incubación según necesidad y potencialidad.</p>
+      <a href="index1incubadora.html" target="_blank" rel="noopener noreferrer" class="bg-white text-[#60b494] font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+        Ir al sitio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Sobre BLOMS -->
+    <section id="sobre" class="py-20 px-6 bg-[white] text-center">
+      <h2 class="text-3xl font-semibold mb-6">Sobre BLÖMS</h2>
+      <p class="max-w-3xl mx-auto text-lg">
+        BLÖMS es una consultora especializada en diseño, desarrollo que da impulso a personas, emprendimientos o empresas que tienen una idea o quieren revisar o reformular su escalera de productos y servicios</p>
+        <p>Formada por un equipo de profesionales con mas de 25 años de experiencia en el ambito publico como privado y con profesionales en formación</p> 
+        <p>Funciona adaptándose a la necesidad del cliente, priorizando sus objetivos y metas </p>
+        <p>Es una asociacion de unidades ejecutoras y de negocios que interaccionan en comunidad para transformar ideas en emprendimientos creativos y estratégicos dedicada a acompañar a personas emprendedoras a través del diagnostico, diseño, educación, coaching financiero y la innovación</p>
+        <p>Creemos en la colaboración, el propósito y el desarrollo integral.
+      </p>
+    </section>
+
+    <!-- Comunidad -->
+    <section id="comunidad" class="py-20 px-6 bg-[#008b94] text-center">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Si te parece interesante alguna propuesta</h2>
+      <p class="max-w-xl mx-auto mb-6 text-lg text-white">
+        Recibí recursos y novedades sobre nuestra consultora y el ecosistema emprendedor de BLÖMS.
+      </p>
+      <div class="flex justify-center flex-wrap gap-2">
+        <input
+          type="email"
+          placeholder="Tu correo electrónico"
+          class="px-4 py-2 rounded-l-xl border border-gray-300"
+        />
+        <button class="bg-[#b15296] text-white px-4 py-2 rounded-r-xl hover:bg-[#1f3556] transition">
+          Suscribirme
+        </button>
+      </div>
+    </section>
+
+    <!--PREFOOTER -->
+
+<section class="bg-azulverdoso text-white py-10 px-4 font-outfit">
+  <!-- Grid superior -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+    <!-- CONSULTORÍA -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">CONSULTORÍA</h2>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Diseño</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías a Emprendedores</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Gestión de Proyectos</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Gestión y planificación</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorías en Comunicación</a></li>
+      </ul>
+    </div>
+
+    <!-- REDES -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">REDES</h2>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://www.instagram.com/bloms.consultora/" target="_blank" class="hover:text-verdementa transition-colors">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="mt-4 text-sm leading-relaxed">
+        <p>La Plata, Argentina</p>
+        <p><a href="mailto:blomsconsultora@gmail.com" class="hover:text-verdementa transition-colors">blomsconsultora@gmail.com</a></p>
+        <p><a href="tel:+5492215916452" class="hover:text-verdementa transition-colors">+54 9221 591 6452</a></p>
+      </div>
+    </div>
+
+    <!-- SECCIONES -->
+    <div>
+      <h2 class="text-lg font-bold mb-3">SECCIONES</h2>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:text-verdementa transition-colors">Asesorias</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Cursos</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Servicios</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Equipo</a></li>
+        <li><a href="#" class="hover:text-verdementa transition-colors">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- LOGO -->
+    <div class="flex items-center justify-center">
+        <img src="images/logotipo cian.png" alt="Logo BLOMS" class="w-auto h-40" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea y grid inferior -->
+  <div class="max-w-7xl mx-auto border-t-2 border-white mt-10 pt-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-left">
+    <a href="politicasdeprivacidad.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de privacidad</a>
+    <a href="politicasdecookies.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Política de Cookies</a>
+    <a href="terminosycondiciones.html" target="_blank" rel="noopener noreferrer" class="hover:text-verdementa transition-colors">Términos y condiciones</a>
+    <p>BLÖMS 2025 © Todos los derechos reservados</p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-white py-6 text-center font-medium relative overflow-hidden" style="background-color: black;">
+  <!-- Fondo floral -->
+  <div class="absolute inset-0 bg-center bg-cover opacity-20" style="background-image: url('./images/fondodepantallanegro.png'); z-index: 0;"></div>
+
+  <!-- Contenido -->
+  <div class="relative z-10 flex justify-center items-center gap-6 mb-4 flex-wrap">
+    <div class="bg-white rounded-2xl p-2">
+      <img src="./images/logo-bloms.png" alt="Blöms Consultora" class="w-16 sm:w-12 h-auto" />
+    </div>
+  </div>
+
+  <p class="relative z-10 mb-2">© 2025 BLÖMS | Consultora Blöms</p>
+
+  <p class="relative z-10">
+    <a href="BLÖMS.html" target="_blank" class="underline hover:text-white">BLÖMS</a>, Design web concept
+    <a href="https://blomstfrisk.github.io/WEB-BLOMS-2025/" target="_blank" class="underline hover:text-white">BLÖMS Consultora</a>
+  </p>
+</footer>
+
+
+
+  </body>
+</html>
